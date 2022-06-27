@@ -11,6 +11,7 @@ header {
   /* Стилизация меню */
   
   .header-menu {
+    display: none;
     @extend %list-style;
     @include flexCenter($main-axis: space-between);
     margin-left: 93px;

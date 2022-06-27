@@ -1,5 +1,5 @@
 .team {
-  @include sectionPadding;
+  @include sectionMobPadding;
     background-color: var(--button-bg-color);
   }
   .team__title{
@@ -7,20 +7,21 @@
   }
   .team__list {
     @extend %list-style;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
   }
 
   .team__box {
-    width: calc((100% - 3 * 30px) / 4);
+    // width: calc((100% - 3 * 30px) / 4);
     background-color: var(--primary-background-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
+      // &:not(:last-child) {
+      //   margin-right: 30px;
+      // }
   }
+ 
   .team__card {
     padding-top: 30px;
     padding-bottom: 30px;

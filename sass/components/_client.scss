@@ -1,5 +1,5 @@
 .client{
-  @include sectionPadding;
+  @include sectionMobPadding;
 
 }
 .client__title{
@@ -8,13 +8,18 @@
 .client__list {
     @extend %list-style;
     display: flex;
+    flex-wrap: wrap;
   }
 .client__card {
-    width: calc((100% - 5 * 30px) / 6);
-    &:not(:last-child) {
-        margin-right: 30px;
-      }
-  }
+    width: calc((100% - 2 * 15px) / 2);
+    margin-right: 30px;
+        margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+  }}
 
 .client__link {
     display: flex;

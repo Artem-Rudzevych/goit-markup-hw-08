@@ -1,4 +1,6 @@
 .social__list {
+  display: flex;
+  justify-content: center;
     @extend .team__list;
     & li:not(:last-child) {
         margin-right: 10px;

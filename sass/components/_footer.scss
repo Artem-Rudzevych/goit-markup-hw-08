@@ -4,12 +4,14 @@
   background-color: var(--secondary-background-color);
 }
 .footer__box {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  text-align: center;
+  // display: flex;
+  // align-items: baseline;
+  // justify-content: space-between;
 }
 .footer__holder{
-  @extend .footer__box;
+  // @extend .footer__box;
+  text-align: center;
 }
 
 .footer__logo {

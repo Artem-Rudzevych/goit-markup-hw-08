@@ -1,17 +1,19 @@
 .advantages {
-  @include sectionPadding;
+  
+  @include sectionMobPadding;
     
   }
   .advantages__list{
     @extend %list-style;
-    display: flex;
+    
   }
-  .advantages__item {
-    width: calc((100% - 3 * 30px) / 4);
-    &:not(:last-child) {
-        margin-right: 30px;
-      }
-  }
+  // .advantages__item {
+
+  //   width: calc((100% - 3 * 30px) / 4);
+  //   &:not(:last-child) {
+  //       margin-right: 30px;
+  //     }
+  // }
   
   .advantages__icon {
     display: flex;
@@ -26,6 +28,7 @@
   .advantages__title {
     margin-top: 0;
     margin-bottom: 10px;
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

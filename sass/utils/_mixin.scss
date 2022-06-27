@@ -8,3 +8,8 @@
     padding-top:$paddingtop; padding-bottom:$paddingbottom;
     
   }
+
+  @mixin sectionMobPadding($paddingtop:60px, $paddingbottom:60px) {
+    padding-top:$paddingtop; padding-bottom:$paddingbottom;
+    
+  }
