@@ -1,0 +1,40 @@
+.client{
+  @include sectionPadding;
+
+}
+.client__title{
+    @extend %section__title;
+}
+.client__list {
+    @extend %list-style;
+    display: flex;
+  }
+.client__card {
+    width: calc((100% - 5 * 30px) / 6);
+    &:not(:last-child) {
+        margin-right: 30px;
+      }
+  }
+
+.client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--icons-border-color);
+    border-radius: 4px;
+    fill: var(--icons-border-color);
+  
+    height: 92px;
+    background-color: var(--primary-background-color);
+    cursor: pointer;
+    transition: fill 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
+    &:hover, &:focus {
+      border: 1px solid var(--hover-text-color);
+      fill: var(--hover-text-color);
+    }
+  }
+  
+  .client__icon {
+    width: 106px;
+    height: 60px;
+  }

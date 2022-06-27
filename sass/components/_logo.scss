@@ -1,0 +1,14 @@
+.logo {
+    text-decoration: none;
+    font-family: $fontLogo;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--logo-stan-color);
+    
+  }
+  .logo__span {
+    color: var(--hover-text-color);
+  }
+  .footer-logo__color {
+    color: var(--primary-background-color);
+  }

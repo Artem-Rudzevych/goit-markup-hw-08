@@ -1,0 +1,22 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--secondary-background-color);
+}
+.footer__box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.footer__holder{
+  @extend .footer__box;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+
+  
+  
+  

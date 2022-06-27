@@ -1,0 +1,10 @@
+@mixin flexCenter($type:flex, $main-axis:center, $cross-axis:center)
+  {display: $type;justify-content: $main-axis;align-items: $cross-axis;} 
+
+  @mixin displayFlex($type:flex, $main-axis:center,)
+  {display: $type;justify-content: $main-axis;} 
+
+  @mixin sectionPadding($paddingtop:94px, $paddingbottom:94px) {
+    padding-top:$paddingtop; padding-bottom:$paddingbottom;
+    
+  }

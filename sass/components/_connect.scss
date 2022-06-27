@@ -1,0 +1,20 @@
+.connect{
+    display: block;
+  }
+  .connect__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-background-color);
+  }
+  .connect__list {
+    @extend %list-style;
+    display: flex;
+    justify-content: space-between;
+    & li:not(:last-child) {
+      margin-right: 10px;
+    }
+  }

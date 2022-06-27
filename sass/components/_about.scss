@@ -1,0 +1,35 @@
+.about {
+  @include sectionPadding($paddingtop:0px);
+    
+  }
+  .about__title{
+    @extend %section__title;
+  }
+  .about__list {
+    @extend %list-style;
+    display: flex;
+    & .about__item:not(:last-child) {
+        margin-right: 30px;
+      }
+  }
+  .about__item {
+    position: relative;
+  }
+  
+  .about__thumb {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--thumb-color);
+  }
+  .about__text {
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-background-color);
+  }

@@ -1,0 +1,11 @@
+.portfolio{
+    @include sectionPadding;
+}
+.filter {
+    @extend %list-style;
+    @include displayFlex;
+    & .filter__items:not(:last-child) {
+        margin-right: 8px;
+      }
+    
+  }
