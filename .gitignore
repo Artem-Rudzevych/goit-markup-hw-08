@@ -104,3 +104,23 @@ dist
 .tern-port
 
 Новая папка/css/styles.css
+old.css/components/_about.scss
+old.css/components/_address.scss
+old.css/components/_advantages.scss
+old.css/components/_body.scss
+old.css/components/_button.scss
+old.css/components/_client.scss
+old.css/components/_connect.scss
+old.css/components/_footer.scss
+old.css/components/_header.scss
+old.css/components/_hero.scss
+old.css/components/_logo.scss
+old.css/components/_modal.scss
+old.css/components/_social.scss
+old.css/components/_team.scss
+old.css/components/portfolio/_filter.scss
+old.css/components/portfolio/_port-card.scss
+old.css/main.scss
+old.css/utils/_mixin.scss
+old.css/utils/_placeholder.scss
+old.css/utils/_variables.scss
