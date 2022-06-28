@@ -48,12 +48,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
+  max-width: 480px;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -196,10 +191,8 @@ img {
 }
 
 .form {
-  width: 448px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 0;
 }
 
 .form__title {
@@ -208,7 +201,7 @@ img {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
@@ -304,7 +297,10 @@ img {
 
 .checkbox__text {
   padding-left: 8px;
-  line-height: 1.7;
+  line-height: 1.16;
+  font-size: 12px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
 }
 .checkbox__text a:hover, .checkbox__text a:focus {
   text-decoration: none;
@@ -384,42 +380,40 @@ header {
 }
 
 /* Стилизация меню */
+.menu {
+  display: block;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #fff;
+}
+
 .header-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 93px;
+  display: inline-block;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-bottom: 302px;
 }
 .header-menu .header-menu__link {
   display: block;
   color: var(--title-color);
   text-decoration: none;
   font-weight: 500;
+  font-size: 40px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
   transition: color 250ms var(--cubic-bezier);
-}
-@media screen and (max-width: 768px) {
-  .header-menu {
-    display: none;
-  }
 }
 
 .header-menu__link {
   position: relative;
   display: block;
-}
-.header-menu__link--current::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--hover-text-color);
 }
 
 .header-menu .header-menu__link:hover, .header-menu .header-menu__link:focus {
@@ -430,8 +424,9 @@ header {
   color: var(--hover-text-color);
 }
 
-.header-menu__items:not(:last-child) {
-  margin-right: 50px;
+.header-menu__items:nth-child(2) {
+  padding-top: 36px;
+  padding-bottom: 32px;
 }
 
 .header-contact__items:not(:last-child) {
@@ -463,6 +458,13 @@ header {
 .header-contact__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.menu__icon {
+  display: flex;
+}
+.menu__icon--close {
+  display: none;
 }
 
 .button, .hero-box__button, .form__button, .connect__button {
@@ -546,6 +548,16 @@ header {
   padding: 10px 55px;
 }
 
+.menu__button {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin: 10px 0px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
 .hero-box {
   max-width: 1600px;
   margin-left: auto;
@@ -579,6 +591,8 @@ header {
   opacity: 1;
   transition: opacity 250ms var(--cubic-bezier);
   z-index: 9;
+  overflow-y: scroll;
+  padding: 93px 15px;
 }
 .backdrop.backdrop--is-hidden {
   visibility: hidden;
@@ -592,16 +606,13 @@ header {
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 450px;
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  z-index: 10;
+  z-index: 9;
   transition: transform 250ms var(--cubic-bezier);
+  padding: 40px;
 }
 
 .modal__icon {

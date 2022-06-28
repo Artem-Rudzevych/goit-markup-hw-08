@@ -1,9 +1,9 @@
 // Форма модяльного окна
 .form {
-    width: 448px;
+    // max-width: 370px;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px 0;
+    // padding: 40px 0;
   }
   .form__title {
     margin: 0;
@@ -11,7 +11,7 @@
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
   
@@ -100,7 +100,12 @@
   }
   .checkbox__text {
     padding-left: 8px;
-    line-height: 1.7;
+    line-height: 1.16;
+    font-size: 12px;
+
+/* identical to box height */
+
+letter-spacing: 0.03em;
     & a:hover,
     & a:focus{
         text-decoration: none;

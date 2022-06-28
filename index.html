@@ -25,9 +25,11 @@
       <div class="container">
         <div class="header">
           <nav class="header-nav">
-            <a class="logo" href="/goit-markup-hw-05/index.html"
+            <a class="logo" href="/goit-markup-hw-08/index.html"
               ><span class="logo__span">Web</span>Studio</a
             >
+
+           <div class="menu">
             <ul class="header-menu">
               <li class="header-menu__items">
                 <a
@@ -44,9 +46,18 @@
               <li class="header-menu__items">
                 <a href="/contact" class="header-menu__link">Контакты</a>
               </li>
+           </div>
             </ul>
           </nav>
-
+          <button class="menu__button" type="button">
+            <svg width="40" height="40">
+              <use class="menu__icon" href="./images/icons.svg#menu"></use>
+              <use
+                class="menu__icon--close"
+                href="./images/icons.svg#menu-close"
+              ></use>
+            </svg>
+          </button>
           <ul class="header-contact header-flex">
             <li class="header-contact__items">
               <a href="mailto:info@devstudio.com" class="header-contact__link">
@@ -88,7 +99,7 @@
 
             <ul class="form__list">
               <li class="form__field">
-                <label class="form-label" for="user-name"> Имя</label>
+                <label class="form__label" for="user-name"> Имя</label>
                 <input
                   class="form__input"
                   type="text"
