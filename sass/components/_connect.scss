@@ -1,20 +1,32 @@
 .connect{
-  @include sectionMobPadding;
+  
     display: block;
+    @media screen and (max-width: 767px) {
+      @include sectionMobPadding;
+    }
   }
+ .connect__box{
+  display: block;
+  max-width: 450px;
+  margin: 0 auto;
+    
+ }
+
+
   .connect__title {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin:0;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--primary-background-color);
   }
+ 
   .connect__list {
     @extend %list-style;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
     & li:not(:last-child) {
       margin-right: 10px;
     }

@@ -52,9 +52,8 @@
     @extend .hero-box__button;
     padding-left: 29px;
     padding-right: 13px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    margin: 0px auto;
+    
   }
   .modal-button__close {
     display: flex;

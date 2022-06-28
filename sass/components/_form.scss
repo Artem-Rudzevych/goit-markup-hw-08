@@ -137,7 +137,7 @@ letter-spacing: 0.03em;
     margin-left: 10px;
   }
   .connect__input {
-    width: 358px;
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -147,6 +147,7 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
     color: var(--primary-background-color);
     padding: 15px 16px;
+    margin: 20px 0px;
     // margin-right: 12px;
     &:focus {
         border-color: var(--hover-text-color);

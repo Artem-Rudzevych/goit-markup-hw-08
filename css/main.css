@@ -139,14 +139,23 @@ img {
 }
 
 .connect {
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .connect {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.connect__box {
+  display: block;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .connect__title {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -157,6 +166,7 @@ img {
 .connect__list {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 .connect__list li:not(:last-child) {
   margin-right: 10px;
@@ -328,7 +338,7 @@ img {
 }
 
 .connect__input {
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -338,6 +348,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-background-color);
   padding: 15px 16px;
+  margin: 20px 0px;
 }
 .connect__input:focus {
   border-color: var(--hover-text-color);
@@ -508,9 +519,7 @@ header {
   align-items: center;
   padding-left: 29px;
   padding-right: 13px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+  margin: 0px auto;
 }
 
 .modal-button__close {
@@ -913,7 +922,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .client__card {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -941,5 +950,13 @@ header {
   .team__list, .social__list {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__box {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
   }
 }/*# sourceMappingURL=main.css.map */
