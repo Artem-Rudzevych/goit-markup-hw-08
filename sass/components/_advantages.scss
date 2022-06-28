@@ -6,14 +6,9 @@
   .advantages__list{
     @extend %list-style;
     
+    
+    
   }
-  // .advantages__item {
-
-  //   width: calc((100% - 3 * 30px) / 4);
-  //   &:not(:last-child) {
-  //       margin-right: 30px;
-  //     }
-  // }
   
   .advantages__icon {
     display: flex;

@@ -11,6 +11,7 @@
     flex-wrap: wrap;
   }
 .client__card {
+  @media screen and (max-width: 767px){
     width: calc((100% - 2 * 15px) / 2);
     margin-right: 30px;
         margin-bottom: 30px;
@@ -19,7 +20,8 @@
     }
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
-  }}
+       }}}
+ 
 
 .client__link {
     display: flex;
@@ -28,8 +30,7 @@
     border: 1px solid var(--icons-border-color);
     border-radius: 4px;
     fill: var(--icons-border-color);
-  
-    height: 92px;
+      height: 92px;
     background-color: var(--primary-background-color);
     cursor: pointer;
     transition: fill 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);

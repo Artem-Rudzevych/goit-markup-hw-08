@@ -7,7 +7,6 @@
   }
   .team__list {
     @extend %list-style;
-    // display: flex;
     // justify-content: center;
   }
 
@@ -20,6 +19,7 @@
       // &:not(:last-child) {
       //   margin-right: 30px;
       // }
+     
   }
  
   .team__card {
