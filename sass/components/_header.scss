@@ -11,12 +11,11 @@ header {
   /* Стилизация меню */
   
   .header-menu {
-    display: none;
-    @extend %list-style;
+        @extend %list-style;
     @include flexCenter($main-axis: space-between);
     margin-left: 93px;
-
     & .header-menu__link {
+      
       display: block;
       color: var(--title-color);
       text-decoration: none;
@@ -27,8 +26,12 @@ header {
       padding-bottom: 32px;
       transition: color 250ms var(--cubic-bezier);
     }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
   .header-menu__link {
+    
     position: relative;
     display: block;
     &--current::after {
@@ -44,18 +47,21 @@ header {
   }
   
   .header-menu__link{
+    
     .header-menu &:hover ,
     .header-menu &:focus  {
      color: var(--hover-text-color);
    }
   }
   .header-menu__link--current  {
+    
     .header-menu__items &   { color: var(--hover-text-color);
     }
   
   }
 
   .header-menu__items{
+    
     &:not(:last-child) {
       margin-right: 50px;
     }
@@ -63,17 +69,22 @@ header {
 
   
   .header-contact__items {
+    
     &:not(:last-child) {
       margin-right: 50px;
     }
   }
   .header-contact{
-    @extend %header-flex;
+        @extend %header-flex;
     @extend %list-style;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
  
   .header-contact__link{
     .header-contact & {
+      
       display: flex;
     align-items: center;
     font-weight: 500;
