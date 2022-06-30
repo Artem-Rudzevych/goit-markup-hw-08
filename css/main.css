@@ -77,7 +77,7 @@ img {
   overflow: hidden;
 }
 
-.card__list, .filter, .client__list, .team__list, .social__list, .about__list, .advantages__list, .header-contact, .header-menu, .form__list, .address__list, .connect__list {
+.card__list, .filter, .client__list, .team__list, .social__list, .about__list, .advantages__list, .header-contact, .form__list, .address__list, .connect__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -371,6 +371,7 @@ header {
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -383,44 +384,15 @@ header {
 }
 
 /* Стилизация меню */
-.header-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 88px;
-}
-.header-menu .header-menu__link {
-  display: block;
-  color: var(--title-color);
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color 250ms var(--cubic-bezier);
+.menu {
+  display: none;
 }
 
-.header-menu__link {
-  position: relative;
-  display: block;
-}
-.header-menu__link--current::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--hover-text-color);
+.menu.is-open {
+  display: inline-block;
 }
 
 .header-menu .header-menu__link:hover, .header-menu .header-menu__link:focus {
-  color: var(--hover-text-color);
-}
-
-.header-menu__items .header-menu__link--current {
   color: var(--hover-text-color);
 }
 
@@ -454,13 +426,6 @@ header {
 .header-contact__icon {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.menu__icon {
-  display: flex;
-}
-.menu__icon--close {
-  display: none;
 }
 
 .button, .hero-box__button, .form__button, .connect__button {
@@ -543,6 +508,7 @@ header {
 }
 
 .menu__button {
+  z-index: 10;
   display: flex;
   width: 40px;
   height: 40px;
@@ -558,6 +524,18 @@ header {
   .menu__button {
     display: none;
   }
+}
+
+.menu__button.is-open .menu__icon {
+  display: none;
+}
+
+.menu__button .menu__icon--close {
+  display: none;
+}
+
+.menu__button.is-open .menu__icon--close {
+  display: block;
 }
 
 .hero-box {
@@ -911,12 +889,79 @@ header {
     width: auto;
   }
 }
-@media screen and (max-width: 768px) {
-  .header-menu .header-menu__link {
-    display: none;
+@media screen and (min-width: 768px) {
+  .menu {
+    display: block;
   }
 }
+@media screen and (max-width: 767px) {
+  .header-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #fff;
+  }
+  .header-menu .header-menu__link {
+    display: block;
+    color: var(--title-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms var(--cubic-bezier);
+  }
 
+  .header-menu__items .header-menu__link--current {
+    color: var(--hover-text-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 88px;
+  }
+  .header-menu .header-menu__link {
+    display: block;
+    color: var(--title-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms var(--cubic-bezier);
+  }
+
+  .header-menu__link {
+    position: relative;
+    display: block;
+  }
+  .header-menu__link--current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--hover-text-color);
+  }
+
+  .header-menu__items .header-menu__link--current {
+    color: var(--hover-text-color);
+  }
+}
 @media screen and (min-width: 1200px) {
   .header-menu {
     margin-left: 93px;

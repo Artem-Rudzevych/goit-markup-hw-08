@@ -85,6 +85,7 @@
 
   }
   .menu__button{
+    z-index: 10;
     display: flex;
     width: 40px;
     height: 40px;
@@ -98,4 +99,14 @@
     @media screen and (min-width: 768px){
       display: none;
     }
+  }
+  .menu__button.is-open .menu__icon{
+    display: none;
+    
+  }
+  .menu__button .menu__icon--close{
+    display: none;
+  }
+  .menu__button.is-open .menu__icon--close{
+    display: block;
   }
