@@ -906,6 +906,8 @@ header {
     margin: 0;
     list-style: none;
     background-color: #fff;
+    font-size: 40px;
+    line-height: 1.17;
   }
   .header-menu .header-menu__link {
     display: block;
@@ -914,9 +916,12 @@ header {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
     transition: color 250ms var(--cubic-bezier);
+  }
+
+  .header-menu__items:nth-child(2) {
+    margin-top: 36px;
+    margin-bottom: 32px;
   }
 
   .header-menu__items .header-menu__link--current {
@@ -967,11 +972,6 @@ header {
 @media screen and (min-width: 1200px) {
   .header-menu {
     margin-left: 93px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header-contact {
-    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
