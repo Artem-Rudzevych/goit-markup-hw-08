@@ -42,9 +42,7 @@ header {
       padding-bottom: 32px;
       transition: color 250ms var(--cubic-bezier);
     }
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
+    
   }
   .header-menu__link {
     position: relative;
@@ -85,7 +83,7 @@ header {
     }
   }
   .header-contact{
-        @extend %header-flex;
+    display: block;   
     @extend %list-style;
     
   }

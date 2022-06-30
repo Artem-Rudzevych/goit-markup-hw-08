@@ -31,5 +31,26 @@
       margin-right: 10px;
     }
   }
-
+//   Форма подписки в футуре
+.connect__icon {
+  margin-left: 10px;
+}
+.connect__input {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--primary-background-color);
+  padding: 15px 16px;
+  margin: 20px 0px;
+  &:focus {
+      border-color: var(--hover-text-color);
+      outline: 0;
+      fill: var(--hover-text-color);
+    }
+}
   

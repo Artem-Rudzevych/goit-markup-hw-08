@@ -1,7 +1,6 @@
 .about {
-  display: none;
   @include sectionPadding($paddingtop:0px);
-    
+    display: none;
   }
   .about__title{
     @extend %section__title;
