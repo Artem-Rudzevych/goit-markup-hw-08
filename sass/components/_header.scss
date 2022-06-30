@@ -39,36 +39,5 @@ header {
         margin-bottom: 10px;
     }
   }
-  .header-contact{
-    display: block;   
-    @extend %list-style;
-    
-  }
-  
- 
-  .header-contact__link{
-    .header-contact & {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-    text-decoration: none;
-    
-    transition: color 250ms var(--cubic-bezier);
-    }
-    
-  }
-  .header-contact__link{
-    .header-contact &:hover,
-    .header-contact &:focus{
-      color: var(--hover-text-color);
-    }
-  }
 
-  .header-contact__icon {
-    fill: currentColor;
-    margin-right: 10px;
-  }
   
