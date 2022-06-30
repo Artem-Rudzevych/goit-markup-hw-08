@@ -85,7 +85,8 @@
 
   }
   .menu__button{
-    display: flex;
+    
+    display: block;
     width: 40px;
     height: 40px;
     margin: 10px 0px;
@@ -94,8 +95,20 @@
     background: none;
     &:hover, &:focus{
      fill: var(--hover-text-color);
+     z-index: 10;
     }
     @media screen and (min-width: 768px){
       display: none;
     }
+  }
+  .menu__icon--close{
+    display: none;
+  }
+  .menu__button.is-open .menu__icon--close{
+   
+    display: block;
+   
+  }
+  .menu__button.is-open .menu__icon{
+    display: none;
   }
