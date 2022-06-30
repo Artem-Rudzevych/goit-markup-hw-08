@@ -608,7 +608,7 @@ header {
 
 .modal {
   position: absolute;
-  max-width: 450px;
+  width: 450px;
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -897,6 +897,18 @@ header {
   .client__title, .team__title, .about__title {
     font-size: 36px;
     margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: auto;
   }
 }
 @media screen and (max-width: 768px) {
