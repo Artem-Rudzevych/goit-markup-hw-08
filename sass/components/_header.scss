@@ -2,7 +2,7 @@ header {
     border-bottom: 1px solid var(--border-head-color);
   }
  .header{
-  position: relative;
+  // position: relative;
     @include flexCenter($main-axis: space-between);
  }
   .header-nav {
