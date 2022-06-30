@@ -10,18 +10,55 @@ header {
     
   }
   /* Стилизация меню */
-  
-  .menu{
-    display: none;
+  // .menu.is-hiden{
+  //   display: none;
+  // }
+  // .menu{
+    
+  //   display: block;
+    
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: 2;
+  //   background-color: #fff ;
+   
+  // }
+  .header-menu {
+    @extend %list-style;
+    @include flexCenter($main-axis: space-between);
+    margin-left: 88px;
+
+    & .header-menu__link {
+      display: block;
+      color: var(--title-color);
+      text-decoration: none;
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      transition: color 250ms var(--cubic-bezier);
+    }
+    
   }
-
-  .menu.is-open{
+  .header-menu__link {
+    position: relative;
     display: block;
-     }
-     
+    &--current::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--hover-text-color);
+    }
+  }
   
-  
-
   .header-menu__link{
     .header-menu &:hover ,
     .header-menu &:focus  {
@@ -77,5 +114,9 @@ header {
     fill: currentColor;
     margin-right: 10px;
   }
-  
- 
+  .menu__icon{
+    display: flex;
+    &--close{
+      display: none;
+    }
+  }
