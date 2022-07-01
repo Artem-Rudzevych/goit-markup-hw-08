@@ -47,9 +47,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -387,10 +387,6 @@ header {
 /* Стилизация меню */
 .menu {
   display: none;
-}
-
-.menu.is-open {
-  display: inline-block;
 }
 
 .menu__flex {
@@ -884,7 +880,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .modal {
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
@@ -892,6 +888,7 @@ header {
 @media screen and (min-width: 1200px) {
   .modal {
     width: auto;
+    top: 50%;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -944,6 +941,11 @@ header {
 
   .header-menu__items .header-menu__link--current {
     color: var(--hover-text-color);
+  }
+
+  .menu.is-open {
+    display: inline-block;
+    margin: 0;
   }
 }
 @media screen and (min-width: 768px) {
