@@ -1,5 +1,6 @@
 .hero-box {
     max-width: 1600px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 118px;
@@ -10,7 +11,8 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero.jpg);
+      url(../images/hero-mob.jpg);
+      background-size: cover;
   }
   .hero-box__title {
     margin-top: 0;

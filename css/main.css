@@ -65,6 +65,7 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .visually-hidden {
@@ -545,13 +546,15 @@ header {
 
 .hero-box {
   max-width: 1600px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
+  background-size: cover;
 }
 
 .hero-box__title {
@@ -1078,9 +1081,16 @@ header {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero-box {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/hero-tab.jpg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero-box {
     padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/hero.jpg);
   }
 }
 
@@ -1208,7 +1218,8 @@ header {
   }
 }
 .connect__input {
-  width: 358px;
+  max-width: 358px;
+  width: 100%;
   margin-right: 12px;
 }
 

@@ -209,16 +209,11 @@
   }
 }
    
-
-
     @media screen and (min-width: 1200px){
         .header-contact{
       display: flex;
       align-items: center;
       justify-content: space-between;
-    //   padding: 0;
-    //   margin: 0;
-    //   list-style: none;
     
       & .header-contact__items {
         &:not(:last-child) {
@@ -244,9 +239,19 @@
 }
 
  // Hero
+ .hero-box{
+    @media screen and (min-width: 768px){
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../../../images/hero-tab.jpg);
+    }
+ }
+
     .hero-box{
         @media screen and (min-width: 1200px){
-        padding: 200px 0;}
+        padding: 200px 0;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../../../images/hero.jpg);
+    }
     }
     .hero-box__title{
         @media screen and (min-width: 1200px){
@@ -370,7 +375,8 @@
     }
 }
 .connect__input{
-    width: 358px;
+    max-width: 358px;
+    width: 100%;
     margin-right: 12px;
 }
 
