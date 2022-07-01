@@ -34,10 +34,22 @@ header {
     }
   }
   
-  .header-contact__items {
-        &:not(:last-child) {
-        margin-bottom: 10px;
-    }
-  }
-
   
+
+  .menu-social{
+    display: inline-flex;
+    @extend %list-style;
+    
+    & .menu-social__item:not(:last-child){
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px solid var(--input-border-color);
+    }
+}.menu-social__link{
+  text-decoration: none;
+  font-weight: 500;
+font-size: 18px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--hover-text-color);
+}
