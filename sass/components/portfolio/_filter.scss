@@ -1,11 +1,12 @@
 .portfolio{
-    @include sectionPadding;
+    @include sectionMobPadding;
 }
 .filter {
     @extend %list-style;
-    @include displayFlex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     & .filter__items:not(:last-child) {
         margin-right: 8px;
       }
-    
-  }
+    }
