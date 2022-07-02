@@ -51,6 +51,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -765,7 +766,9 @@ header {
 }
 
 .card__aside {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   box-shadow: none;
   transition: box-shadow 250ms var(--cubic-bezier);
@@ -806,6 +809,7 @@ header {
 }
 
 .card__border {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid var(--border-color);
   border-top: 0;
