@@ -41,6 +41,10 @@ body {
   color: var(--text-color);
 }
 
+body .menu.is-open {
+  overflow: hidden;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -397,6 +401,7 @@ header {
 
 .menu-social {
   display: inline-flex;
+  flex-wrap: wrap;
 }
 .menu-social .menu-social__item:not(:last-child) {
   margin-right: 10px;
@@ -554,7 +559,7 @@ header {
   transition: opacity 250ms var(--cubic-bezier);
   z-index: 9;
   overflow-y: scroll;
-  padding: 93px 15px;
+  padding: 93px 0px;
 }
 .backdrop.backdrop--is-hidden {
   visibility: hidden;
@@ -568,7 +573,6 @@ header {
 
 .modal {
   position: absolute;
-  width: 450px;
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -862,8 +866,9 @@ header {
 
 @media screen and (min-width: 768px) {
   .modal {
-    top: 75%;
+    top: 50%;
     left: 50%;
+    width: 450px;
     transform: translate(-50%, -50%) scale(1);
   }
 }
@@ -928,6 +933,10 @@ header {
   .menu.is-open {
     display: inline-block;
     margin: 0;
+  }
+
+  .modal {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {

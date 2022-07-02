@@ -57,6 +57,7 @@ header {
 
   .menu-social{
     display: inline-flex;
+    flex-wrap: wrap;
     @extend %list-style;
     
     & .menu-social__item:not(:last-child){
