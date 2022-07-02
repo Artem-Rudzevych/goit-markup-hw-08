@@ -1,18 +1,13 @@
 .connect{
-  
     display: block;
-    @media screen and (max-width: 767px) {
-      @include sectionMobPadding;
-    }
+   
   }
- .connect__box{
+.connect__box{
   display: block;
   margin: 0 auto;
-    
  }
 
-
-  .connect__title {
+.connect__title {
     margin:0;
     font-weight: 700;
     font-size: 14px;
@@ -21,7 +16,7 @@
     color: var(--primary-background-color);
   }
  
-  .connect__list {
+.connect__list {
     @extend %list-style;
     display: flex;
     justify-content: center;
@@ -35,9 +30,9 @@
   margin-left: 10px;
 }
 .connect__input {
+  max-width: 450px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   font-size: 16px;
@@ -46,7 +41,7 @@
   color: var(--primary-background-color);
   padding: 15px 16px;
   margin: 20px 0px;
-  &:focus {
+    &:focus {
       border-color: var(--hover-text-color);
       outline: 0;
       fill: var(--hover-text-color);

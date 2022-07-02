@@ -38,7 +38,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    width: 100%;
+        width: 100%;
     }
 }
 @media screen and (max-width: 767px){
@@ -110,7 +110,7 @@
         }
         
       }
-      .header-menu__link {
+    .header-menu__link {
         position: relative;
         display: block;
         &--current::after {
@@ -124,14 +124,12 @@
           background-color: var(--hover-text-color);
         }
       }
-      .header-menu__link--current  {
+    .header-menu__link--current  {
         .header-menu__items &   { color: var(--hover-text-color);
         }
       
       }
 }
-
-
 
 @media screen and (min-width: 1200px) {
     .header-menu{
@@ -159,7 +157,7 @@
     }
 }
 // heder contact 
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+@media screen and (min-width: 768px) and (max-width:1199px) {
         .header-contact{
             display: block;   
             font-size: 12px;
@@ -209,7 +207,7 @@
   }
 }
    
-    @media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px){
         .header-contact{
       display: flex;
       align-items: center;
@@ -222,7 +220,7 @@
     }  }}
 
     }
-    @media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px){
     .header-contact{
         & .header-contact__link{
             padding: 32px 0;
@@ -249,14 +247,11 @@
   }
 }
 
-
-
-
- .hero-box{
+.hero-box{
     @media screen and (min-width: 768px){
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)), url(../images/hero-tab.jpg);
-    }
+    
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -266,14 +261,14 @@
                 rgba(47, 48, 58, 0.4)), url(../images/hero-tab-x2.jpg);
           }
         }
- }
+ }}
 
-    .hero-box{
-        @media screen and (min-width: 1200px){
+.hero-box{
+    @media screen and (min-width: 1200px){
         padding: 200px 0;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-    }
+    
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -283,25 +278,25 @@
                 rgba(47, 48, 58, 0.4)), url(../images/hero-x2.jpg);
           }
         }
-    }
-    .hero-box__title{
-        @media screen and (min-width: 1200px){
-            font-size: 44px;
-    line-height: 1.3;
+    }}
+.hero-box__title{
+    @media screen and (min-width: 1200px){
+          font-size: 44px;
+          line-height: 1.3;
         }
     }
 
 // Advantages
-   @media screen and (min-width: 768px){
-    .advantages__list{
+@media screen and (min-width: 768px){
+  .advantages__list{
     display: flex;
-  flex-wrap: wrap;}
+    flex-wrap: wrap;}
   .advantages__title{
-    text-align: inherit;
+       text-align: inherit;
   }
      }
 
-   @media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
     .advantages__item {
       margin-right: 30px;
       margin-bottom: 30px;
@@ -313,39 +308,39 @@
         }        
     } }
 
-   @media screen and (min-width: 1200px){
-        .advantages__item{
-            width: calc((100% - 3 * 30px) / 4);
-            margin-bottom: 0;
+@media screen and (min-width: 1200px){
+    .advantages__item{
+      width: calc((100% - 3 * 30px) / 4);
+      margin-bottom: 0;
          &:not(:last-child) {
          margin-right: 30px;
       }}
     }
 // About
-    @media screen and (min-width: 1200px) {
-        .about{
+@media screen and (min-width: 1200px) {
+    .about{
         display:inherit;}     
     }
 
 //   Team
-  @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     .team__box{
-    width: calc((100% - 2 * 15px) / 2);
-    margin-right: 30px;
-    margin-bottom: 30px;
-    &:nth-child(2n) {
-      margin-right: 0;
+     width: calc((100% - 2 * 15px) / 2);
+     margin-right: 30px;
+     margin-bottom: 30px;
+       &:nth-child(2n) {
+         margin-right: 0;
           }
-    &:nth-last-child(-n + 2) {
+         &:nth-last-child(-n + 2) {
             margin-bottom: 0;
         }
   }}
-  @media screen and (min-width: 768px){
-   .team__list {
+@media screen and (min-width: 768px){
+    .team__list {
     display: flex;
     flex-wrap: wrap;
   }}
-  @media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px){
     .team__box{
         width: calc((100% - 3 * 30px) / 4);
         margin-bottom: 0;
@@ -356,7 +351,7 @@
   }
 
   // Client
-  @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     .client__card {
       width: calc((100% - 2 * 30px) / 3);
       margin-right: 30px;
@@ -368,7 +363,7 @@
         margin-bottom: 0;
     }}
   }
-  @media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px){
     .client__card{
         width: calc((100% - 5 * 30px) / 6);
         margin-bottom: 0;
@@ -379,7 +374,7 @@
   }
 
 // Footer
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .footer__box{
       display: flex;
     align-items: baseline;
@@ -387,7 +382,7 @@
     margin-bottom: 60px;
     }
   }
-  @media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px){
     .footer__holder, .footer__box{
         text-align: inherit;
         margin-bottom:0;
@@ -398,12 +393,10 @@
         margin-right: 70px;
       }
   }
-//   Connect
-.connect__input {
-  max-width: 450px;
-  width: 100%;
-  
-}
+// Connect
+ @media screen and (max-width: 767px) {
+   .connect{@include sectionMobPadding;}
+ }
 
 @media screen and (min-width: 1200px){
     .connect__box{
@@ -414,7 +407,6 @@
       margin-right: 12px;
     }
 }
-
 
 // ПОРТФОЛИО
 
@@ -428,6 +420,7 @@
 .filter{
     @include displayFlex;
 }}
+
 // Карточки
 @media screen and (min-width: 768px) and (max-width: 1199px){
     .card__list{
