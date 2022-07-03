@@ -41,7 +41,7 @@ body {
   color: var(--text-color);
 }
 
-body .menu.is-open {
+body .no-scroll {
   overflow: hidden;
 }
 
